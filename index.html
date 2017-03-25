@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS响应式</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="jquery-3.0.0.js"></script>
+    <script type="text/javascript">
+        
+$(document).ready(function (){
+    $(".btn").on("click",function(){
+        $(".nav").find("ul").slideToggle(400);
+        });    
+})
+
+    </script>
+</head>
+<body>
+	<div class="navBox">
+    <div class="nav">
+        <ul>
+        <li class="current"><a href="#" target="_blank">首页<small>home</small></a></li>
+        <li><a href="#" target="_blank">电影<small>movie</small></a></li>
+        <li><a href="#" target="_blank">电视剧<small>tv play</small></a></li>
+        <li><a href="#" target="_blank">动漫<small>comic</small></a></li>
+        <li><a href="#" target="_blank">综艺<small>variety</small></a></li>
+        <li><a href="#" target="_blank">纪录片<small>documentary</small></a></li>
+        <li><a href="#" target="_blank">公开课<small>public resourse</small></a></li>
+        </ul>
+        <!--match IE9,IE10 or not ie-->
+        <!--[if (get IE 8) | ! (IE)]><!-->
+        <h1 class="title"><a href="#">腾讯视频</a><span class="btn"><img src="btn.png" width="34" height="34" alt=""/></span></h1>
+        <!--<![endif]-->
+    </div>
+    </div>
+</body>
+</html>
